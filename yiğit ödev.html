@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Famılıawear.com</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #929292;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #111;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      transition: transform 0.2s ease;
+    }
+
+    .product img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-bottom: 1px solid #eee;
+    }
+
+    .product h2 {
+      font-size: 18px;
+      color: #333;
+      margin: 15px 0 5px;
+    }
+
+    .product p {
+      margin: 4px 0;
+      color: #666;
+    }
+
+    .price {
+      color: #d10000;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .add-to-cart {
+      background-color: #111;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin: 15px auto 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .add-to-cart:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>𝓕𝓐𝓜𝓘𝓛𝓘𝓐 𝓦𝓔𝓐𝓡</h1>
+  <div class="product-grid">
+
+    <!-- ÜRÜNLER BAŞLANGIÇ -->
+
+    <div class="product">
+      <img src="c:\Users\F2 Pc\Desktop\yiğit\img-3233.jpg">
+      <h2>Gucci - GG Logo Tişört</h2>
+      <p>Ürün Kodu: FW001</p>
+      <p class="price">8900 TL</p>
+      <button class="add-to-cart" onclick="addToCart('Gucci - GG Logo Tişört')">Sepete Ekle</button>
+    </div>
+
+    <div class="product">
+      <img src="c:\Users\F2 Pc\Desktop\yiğit\Small-744441TQVA92942_Y.jpg">
+      <h2>Balenciaga - Oversized Sweatshirt</h2>
+      <p>Ürün Kodu: FW002</p>
+      <p class="price">12500 TL</p>
+      <button class="add-to-cart" onclick="addToCart('Balenciaga - Oversized Sweatshirt')">Sepete Ekle</button>
+    </div>
+
+    <div class="product">
+      <img src="c:\Users\F2 Pc\Desktop\yiğit\Louis_Vuitton_Grey_3D_Monogram_Cotton_Knit_Hoodie.webp">
+      <h2>Louis Vuitton - Monogram Hoodie</h2>
+      <p>Ürün Kodu: FW003</p>
+      <p class="price">17500 TL</p>
+      <button class="add-to-cart" onclick="addToCart('Louis Vuitton - Monogram Hoodie')">Sepete Ekle</button>
+    </div>
+
+    <div class="product">
+      <img src="c:\Users\F2 Pc\Desktop\yiğit\bzccbu4s.wst_MP_c85d55aa-286c-4046-b944-f3a4dc4bbbc8_1_42011758429075072733253931253_040.jpg">
+      <h2>Prada - Nylon Ceket</h2>
+      <p>Ürün Kodu: FW004</p>
+      <p class="price">19500 TL</p>
+      <button class="add-to-cart" onclick="addToCart('Prada - Nylon Ceket')">Sepete Ekle</button>
+    </div>
+
+    <div class="product">
+      <img src="c:\Users\F2 Pc\Desktop\yiğit\a03dl3c3.gyo_IMG_01_2110097723114.jpg">
+      <h2>Off-White - Industrial Belt</h2>
+      <p>Ürün Kodu: FW005</p>
+      <p class="price">4500 TL</p>
+      <button class="add-to-cart" onclick="addToCart('Off-White - Industrial Belt')">Sepete Ekle</button>
+    </div>
+
+    <div class="product">
+      <img src="c:\Users\F2 Pc\Desktop\yiğit\m-dior-ayakkabi-high-top-sneakers-in-dior-oblique-beyaz.jpg">
+      <h2>Dior - B23 Sneaker</h2>
+      <p>Ürün Kodu: FW006</p>
+      <p class="price">18500 TL</p>
+      <button class="add-to-cart" onclick="addToCart('Dior - B23 Sneaker')">Sepete Ekle</button>
+    </div>
+
+    <div class="product">
+      <img src="c:\Users\F2 Pc\Desktop\yiğit\6bcea22a-c484-4494-b309-0a883f72b6c320230526132342.webp">
+      <h2>Versace - Medusa Tişört</h2>
+      <p>Ürün Kodu: FW007</p>
+      <p class="price">7900 TL</p>
+      <button class="add-to-cart" onclick="addToCart('Versace - Medusa Tişört')">Sepete Ekle</button>
+    </div>
+
+    <div class="product">
+      <img src="c:\Users\F2 Pc\Desktop\yiğit\patch-ff-hoodie-p46548-84250_image.jpg">
+      <h2>Fendi - Logo Hoodie</h2>
+      <p>Ürün Kodu: FW008</p>
+      <p class="price">13400 TL</p>
+      <button class="add-to-cart" onclick="addToCart('Fendi - Logo Hoodie')">Sepete Ekle</button>
+    </div>
+
+    <div class="product">
+      <img src="c:\Users\F2 Pc\Desktop\yiğit\138874049-yves-saint-laurent-kadinlar-icin-deri-montlar-bomber-parkalar-kabanlar-kot-ve-kayak-montlari-outlet-te-indirimli-satis-siyah-yuen-2019-4-6.jpg">
+      <h2>Saint Laurent - Deri Ceket</h2>
+      <p>Ürün Kodu: FW009</p>
+      <p class="price">29500 TL</p>
+      <button class="add-to-cart" onclick="addToCart('Saint Laurent - Deri Ceket')">Sepete Ekle</button>
+    </div>
+
+    <div class="product">
+      <img src="c:\Users\F2 Pc\Desktop\yiğit\a6feda611978424c8c0e26f263e17cca.webp">
+      <h2>Givenchy - Logo Sweatshirt</h2>
+      <p>Ürün Kodu: FW010</p>
+      <p class="price">11200 TL</p>
+      <button class="add-to-cart" onclick="addToCart('Givenchy - Logo Sweatshirt')">Sepete Ekle</button>
+    </div>
+
+    <div class="product">
+      <img src="c:\Users\F2 Pc\Desktop\yiğit\moncler-mont-puffer-jacket-hoodie-2022-erkek-black-siyah.jpg">
+      <h2>Moncler - Kış Montu</h2>
+      <p>Ürün Kodu: FW011</p>
+      <p class="price">18500 TL</p>
+      <button class="add-to-cart" onclick="addToCart('Moncler - Kış Montu')">Sepete Ekle</button>
+    </div>
+
+    <div class="product">
+      <img src="c:\Users\F2 Pc\Desktop\yiğit\ACE492510014SYH_15.jpg">
+      <h2>Tom Ford - Kaşmir Kazak</h2>
+      <p>Ürün Kodu: FW012</p>
+      <p class="price">14200 TL</p>
+      <button class="add-to-cart" onclick="addToCart('Tom Ford - Kaşmir Kazak')">Sepete Ekle</button>
+    </div>
+
+    <!-- ÜRÜNLER BİTİŞ -->
+
+  </div>
+
+  <script>
+    function addToCart(productName) {
+      alert(productName + " sepete eklendi!");
+    }
+  </script>
+</body>
+</html>
